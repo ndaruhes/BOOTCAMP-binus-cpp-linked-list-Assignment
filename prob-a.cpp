@@ -9,12 +9,12 @@ struct Node {
 } * head, *tail, *curr;
 
 // Create NULL
-// Node *createNode(int angka) {
-//     Node *newNode = (Node *)malloc(sizeof(Node));
-//     newNode->angka = angka;
-//     newNode->next = NULL;
-//     return newNode;
-// }
+Node *createNode(int angka) {
+    Node *newNode = (Node *)malloc(sizeof(Node));
+    newNode->angka = angka;
+    newNode->next = NULL;
+    return newNode;
+}
 
 // Insert
 void pushTail(int angka) {
